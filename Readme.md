@@ -1,7 +1,7 @@
 # Личный проект «Кэт энерджи»
 
-* Студент: [Никита Иванов](https://up.htmlacademy.ru/adaptive/28/user/2070551).
-* Наставник: `Неизвестно`.
+- Студент: [Никита Иванов](https://up.htmlacademy.ru/adaptive/28/user/2070551).
+- Наставник: [Амина Омарова](https://up.htmlacademy.ru/adaptive/28/user/474063).
 
 ---
 
