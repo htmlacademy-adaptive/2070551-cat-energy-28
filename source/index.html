@@ -3,13 +3,14 @@
 
 <head>
   <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Cat Energy: Главная</title>
   <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body class="page__body">
   <header class="main-header">
-    <div class="main-wrapper">
+    <div class="main-header__wrapper">
       <a class="main-header__logo" href="#">
         <img src="img/index/logo/logo-mobile.svg" alt="Логотип Cat Energy." width="34" height="38">
       </a>
@@ -21,13 +22,13 @@
     <nav class="main-nav">
         <ul class="main-nav__list">
           <li class="main-nav__item">
-            <a class="main-nav__link" href="#">Главная</a>
-          </li>
-          <li class="main-nav__item main-nav__item--current">
-            <a class="main-nav__link" href="#">Каталог продукции</a>
+            <a class="main-nav__link main-nav__item--current" href="#">Главная</a>
           </li>
           <li class="main-nav__item">
-            <a class="main-nav__link" href="#">Подбор программы</a>
+            <a class="main-nav__link" href="catalog.html">Каталог продукции</a>
+          </li>
+          <li class="main-nav__item">
+            <a class="main-nav__link" href="form.html">Подбор программы</a>
           </li>
         </ul>
     </nav>
@@ -35,25 +36,26 @@
 
   <main class="main-container">
     <section class="main-slide">
+      <h1 class="visually-hidden">Программы питания для котов</h1>
       <div class="main-slide__wrapper">
         <h2 class="main-slide__title">Функциональное
           питание для котов</h2>
         <h3 class="main-slide__subtitle">Занялся собой? Займись котом!</h3>
         <img src="img/index/index-can-mobile-1.png" alt="Кошачий корм с курицей." width="280" height="270">
-        <button class="main-slide__button button-primary" type="button">Подобрать программу</button>
+        <button class="main-slide__button button button--primary" type="button">Подобрать программу</button>
       </div>
     </section>
 
     <section class="catalog">
       <h2 class="visually-hidden">Каталог продукции</h2>
       <div class="catalog__content production">
-        <h2 class="production__title production-title--icon">Похудение</h2>
+        <h3 class="production__title production__title--icon">Похудение</h3>
         <p class="production__description">Ваш кот весит больше собаки и почти утратил способность лазить по деревьям?
           Пора на диету! Cat Energy Slim поможет вашему питомцу сбросить лишний вес.</p>
         <button class="production__button" type="button">Каталог Slim</button>
       </div>
       <div class="catalog__content production">
-        <h2 class="production__title"><span class="production__icon"></span>Набор массы</h2>
+        <h3 class="production__title"><span class="production__icon"></span>Набор массы</h3>
         <p class="production__description">Заработать авторитет среди дворовых котов и даже собак? Серия Cat Energy Pro
           поможет вашему коту нарастить необходимые мышцы!</p>
         <button class="production__button" type="button">Каталог Pro</button>
@@ -122,20 +124,22 @@
         <img src="img/index/logo/logo-icon.svg" alt="Cat Energy." width="101" height="18">
       </a>
       <div class="page-footer__socials social-media">
-        <h2 class="visually-hidden">Наши социальные сети</h2>
-          <a class="social-media__link vkontakte vkontakte--element" href="#"><span class="visually-hidden">Вконтакте</span>
+        <span class="visually-hidden">Наши социальные сети</span>
+          <a class="social-media__link social-media__link--vkontakte" href="#"><span class="visually-hidden">Вконтакте</span>
             <img src="img/index/socials/vkontakte.svg" alt="Вконтакте." width="27" height="17">
           </a>
-          <a class="social-media__link youtube youtube--element" href="#"><span class="visually-hidden">Ютьюб</span>
-            <img src="img/index/socials/youtube.svg" alt="Вконтакте." width="24" height="19">
+          <a class="social-media__link social-media__link--youtube" href="#"><span class="visually-hidden">Ютьюб</span>
+            <img src="img/index/socials/youtube.svg" alt="Ютьюб." width="24" height="19">
           </a>
-          <a class="social-media__link telegram telegram--element" href="#"><span class="visually-hidden">Телеграм</span>
-            <img src="img/index/socials/telegram.svg" alt="Вконтакте." width="20" height="18">
+          <a class="social-media__link social-media__link--telegram" href="#"><span class="visually-hidden">Телеграм</span>
+            <img src="img/index/socials/telegram.svg" alt="Телеграм." width="20" height="18">
           </a>
       </div>
       <div class="page-footer__academy html-academy">
-        <h2 class="html-academy__title">HTML Academy</h2>
-        <img src="img/index/logo/html-academy-logo.svg" alt="Логотип HTML Academy." width="27" height="34">
+        <a class="html-academy__link html-academy__link--logo" href="#">
+          <span class="html-academy__title">HTML Academy</span>
+          <img src="img/index/logo/html-academy-logo.svg" alt="Логотип HTML Academy." width="27" height="34">
+        </a>
       </div>
     </div>
   </footer>

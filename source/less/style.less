@@ -1,7 +1,8 @@
+@import "./fonts.less";
+@import "./colors.less";
 @import "./blocks/main-slide.less";
 @import "./blocks/additional-catalog.less";
-@import "./blocks/button-primary.less";
-@import "./blocks/button-secondary.less";
+@import "./blocks/button.less";
 @import "./blocks/cat-data.less";
 @import "./blocks/catalog.less";
 @import "./blocks/example.less";
@@ -21,54 +22,7 @@
 @import "./blocks/table-value.less";
 @import "./blocks/social-media.less";
 @import "./blocks/html-academy.less";
-
-@font-face {
-  font-family: "Lato";
-  src: url("/fonts/lato/Lato-Regular.woff") format("woff");
-  font-style: normal;
-  font-weight: 400;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: "Lato";
-  src: url("/fonts/lato/Lato-Regular.woff2") format("woff2");
-  font-style: normal;
-  font-weight: 400;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: "Oswald";
-  src: url("/fonts/oswald/oswaldmedium.woff") format("woff");
-  font-style: normal;
-  font-weight: 500;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: "Oswald";
-  src: url("/fonts/oswald/oswaldmedium.woff2") format("woff2");
-  font-style: normal;
-  font-weight: 500;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: "Oswald";
-  src: url("/fonts/oswald/oswaldregular.woff") format("woff");
-  font-style: normal;
-  font-weight: 400;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: "Oswald";
-  src: url("/fonts/oswald/oswaldregular.woff2") format("woff2");
-  font-style: normal;
-  font-weight: 400;
-  font-display: swap;
-}
+@import "./blocks/visually-hidden.less";
 
 body {
   font-family: "Lato", sans-serif;
@@ -77,8 +31,4 @@ body {
   font-size: 14px;
   line-height: 18px;
   color: #444444;
-}
-
-.visually-hidden {
-  display: none;
 }
