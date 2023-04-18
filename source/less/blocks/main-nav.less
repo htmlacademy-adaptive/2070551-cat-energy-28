@@ -14,3 +14,19 @@
   color: @black;
   text-transform: uppercase;
 }
+
+@media (min-width: @tablet-width), (min-width: @desktop-width) {
+  .main-nav__toogle {
+    display: none;
+  }
+
+  .main-nav__list {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .main-nav__item {
+    margin-right: 36px;
+  }
+}
