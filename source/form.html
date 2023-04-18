@@ -3,29 +3,31 @@
 
 <head>
   <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Cat Energy: Подбор программы</title>
+  <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body class="page__body">
   <header class="main-header">
     <div class="main-wrapper">
       <a class="main-header__logo" href="#">
-        <img src="../source/img/index/logo/logo-mobile.svg" alt="Логотип Cat Energy." width="34" height="38">
+        <img src="img/index/logo/logo-mobile.svg" alt="Логотип Cat Energy." width="34" height="38">
       </a>
       <a class="main-header__logo-icon" href="#">
-        <img src="../source/img/index/logo/logo-icon.svg" alt="Cat Energy." width="101" height="18">
+        <img src="img/index/logo/logo-icon.svg" alt="Cat Energy." width="101" height="18">
       </a>
       <button class="main-header__toogle" type="button"><span class="visually-hidden">Открыть меню</span></button>
     </div>
     <nav class="main-nav">
         <ul class="main-nav__list">
           <li class="main-nav__item">
-            <a class="main-nav__link" href="#">Главная</a>
-          </li>
-          <li class="main-nav__item main-nav__item--current">
-            <a class="main-nav__link" href="#">Каталог продукции</a>
+            <a class="main-nav__link" href="index.html">Главная</a>
           </li>
           <li class="main-nav__item">
+            <a class="main-nav__link" href="catalog.html">Каталог продукции</a>
+          </li>
+          <li class="main-nav__item main-nav__link--current">
             <a class="main-nav__link" href="#">Подбор программы</a>
           </li>
         </ul>
@@ -35,11 +37,10 @@
   <main class="main-container">
     <section class="cat-data">
       <div class="cat-data__wrapper">
-        <h2 class="visually-hidden">Форма для заполнения данных</h2>
+        <h1 class="cat-data__title">Подбор программы</h1>
         <form class="cat-data__form form-content" action="" method="post">
           <fieldset class="form-content__group">
-            <legend class="form-content__group-title">Подбор программы</legend>
-            <p class="cat-data__text">Заполните анкету, и мы подберем
+            <p class="form-content__text">Заполните анкету, и мы подберем
               программу питания для вашего кота</p>
             <label class="form-content__group-label" for="name">Имя:*</label>
             <input class="form-content__group-input" type="text" id="name" name="name" value="Барсик">
@@ -80,7 +81,7 @@
           </fieldset>
           <fieldset class="form-content__group">
             <legend class="form-content__group-title">Комментарий</legend>
-            <textarea name="commentary" id="commentary" cols="33" rows="15">Расскажите обо всех повадках кота</textarea>
+            <textarea class="form-content__commentary" name="commentary" id="commentary" cols="33" rows="15">Расскажите обо всех повадках кота</textarea>
           </fieldset>
           <fieldset class="form-content__group">
             <legend class="form-content__group-title">Дополнительно</legend>
@@ -89,30 +90,30 @@
                 <label class="form-content__group-label">
                   <input class="form-content__group-input form-content__group-input--icon" type="checkbox" name="
                   sugar-substitute" checked>
-                  <span class="form-content__group-text">Сахарозаменитель</span>
+                  <span class="form-content__group-text-extra">Сахарозаменитель</span>
                 </label>
               </li>
               <li class="form-content__item">
                 <label class="form-content__group-label">
                   <input class="form-content__group-input form-content__group-input--icon" type="checkbox" name="water">
-                  <span class="form-content__group-text">Питьевая вода</span>
+                  <span class="form-content__group-text-extra">Питьевая вода</span>
                 </label>
               </li>
               <li class="form-content__item">
                 <label class="form-content__group-label">
                   <input class="form-content__group-input form-content__group-input--icon" type="checkbox" name="milk">
-                  <span class="form-content__group-text">Молоко</span>
+                  <span class="form-content__group-text-extra">Молоко</span>
                 </label>
               </li>
               <li class="form-content__item">
                 <label class="form-content__group-label">
                   <input class="form-content__group-input form-content__group-input--icon" type="checkbox" name="vitamins">
-                  <span class="form-content__group-text">Витамины</span>
+                  <span class="form-content__group-text-extra">Витамины</span>
                 </label>
               </li>
             </ul>
           </fieldset>
-          <button class="cat-data__button button-primary" type="submit">Отправить заявку</button>
+          <button class="cat-data__button button button--primary" type="submit">Отправить заявку</button>
         </form>
         <p class="cat-data__footnote">* — Обязательные поля</p>
       </div>
@@ -130,22 +131,23 @@
     <div class="page-footer__map"></div>
     <div class="page-footer__contacts">
       <a class="page-footer__logo-icon" href="#">
-        <img src="../source/img/index/logo/logo-icon.svg" alt="Cat Energy." width="101" height="18">
+        <img src="img/index/logo/logo-icon.svg" alt="Cat Energy." width="101" height="18">
       </a>
       <div class="page-footer__socials social-media">
-        <h2 class="visually-hidden">Наши социальные сети</h2>
+        <span class="visually-hidden">Наши социальные сети</span>
           <a class="social-media__link vkontakte vkontakte--element" href="#"><span class="visually-hidden">Вконтакте</span>
-            <img src="../source/img/index/socials/vkontakte.svg" alt="Вконтакте." width="27" height="17">
+            <img src="img/index/socials/vkontakte.svg" alt="Вконтакте." width="27" height="17">
           </a>
           <a class="social-media__link youtube youtube--element" href="#"><span class="visually-hidden">Ютьюб</span>
-            <img src="../source/img/index/socials/youtube.svg" alt="Вконтакте." width="24" height="19">
+            <img src="img/index/socials/youtube.svg" alt="Ютьюб." width="24" height="19">
           </a>
           <a class="social-media__link telegram telegram--element" href="#"><span class="visually-hidden">Телеграм</span>
-            <img src="../source/img/index/socials/telegram.svg" alt="Вконтакте." width="20" height="18">
+            <img src="img/index/socials/telegram.svg" alt="Телеграм." width="20" height="18">
           </a>
+      </div>
       <div class="page-footer__academy html-academy">
-        <h2 class="html-academy__title">HTML Academy</h2>
-        <img src="../source/img/index/logo/html-academy-logo.svg" alt="Логотип HTML Academy." width="27" height="34">
+        <span class="html-academy__title">HTML Academy</span>
+        <img src="img/index/logo/html-academy-logo.svg" alt="Логотип HTML Academy." width="27" height="34">
       </div>
     </div>
   </footer>
