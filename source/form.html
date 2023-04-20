@@ -38,18 +38,24 @@
     <section class="cat-data">
       <div class="cat-data__wrapper">
         <h1 class="cat-data__title">Подбор программы</h1>
+        <p class="cat-data__text">Заполните анкету, и мы подберем
+        программу питания для вашего кота</p>
         <form class="cat-data__form form-content" action="" method="post">
-          <fieldset class="form-content__group">
-            <p class="form-content__text">Заполните анкету, и мы подберем
-              программу питания для вашего кота</p>
+          <fieldset class="form-content__group form-content__group--cat-info">
+            <div class="form-content__group-wrapper">
             <label class="form-content__group-label" for="name">Имя:*</label>
             <input class="form-content__group-input" type="text" id="name" name="name" value="Барсик">
+            </div>
+            <div class="form-content__group-wrapper">
             <label class="form-content__group-label" for="weight">Вес (кг):*</label>
             <input class="form-content__group-input" type="text" id="weight" name="weight" value="7">
+            </div>
+            <div class="form-content__group-wrapper">
             <label class="form-content__group-label" for="age">Возраст (лет):</label>
             <input class="form-content__group-input" type="text" id="age" name="age" value="7">
+            </div>
           </fieldset>
-          <fieldset class="form-content__group">
+          <fieldset class="form-content__group form-content__group--purpose">
             <ul class="form-content__list">
               <li class="form-content__item">
                 <label class="form-content__group-label">
@@ -71,51 +77,59 @@
               </li>
             </ul>
           </fieldset>
-          <fieldset class="form-content__group">
+          <fieldset class="form-content__group form-content__group--contacts">
             <legend class="form-content__group-title">Контактные данные
               (владельца кота)</legend>
+          <div class="form-content__group-container">
+            <div class="form-content__group-wrapper">
             <label class="form-content__group-label" for="email">E-mail:*</label>
             <input class="form-content__group-input form-content__group-input--email" type="email" id="email" name="email" value="kuklachev@gmail.com">
+            </div>
+            <div class="form-content__group-wrapper">
             <label class="form-content__group-label" for="phone">Телефон:*</label>
             <input class="form-content__group-input form-content__group-input--tel" type="tel" id="phone" name="tel" value="8 (960) 900-60-90">
+            </div>
+          </div>
           </fieldset>
-          <fieldset class="form-content__group">
+          <fieldset class="form-content__group form-content__group--commentary">
             <legend class="form-content__group-title">Комментарий</legend>
             <textarea class="form-content__commentary" name="commentary" id="commentary" cols="33" rows="15">Расскажите обо всех повадках кота</textarea>
           </fieldset>
-          <fieldset class="form-content__group">
+          <fieldset class="form-content__group form-content__group--additional">
             <legend class="form-content__group-title">Дополнительно</legend>
-            <ul class="form-content__list">
+            <ul class="form-content__list form-content__list--additional">
               <li class="form-content__item">
                 <label class="form-content__group-label">
-                  <input class="form-content__group-input form-content__group-input--icon" type="checkbox" name="
+                  <input class="form-content__group-input form-content__group-input--checkbox" type="checkbox" name="
                   sugar-substitute" checked>
                   <span class="form-content__group-text-extra">Сахарозаменитель</span>
                 </label>
               </li>
               <li class="form-content__item">
                 <label class="form-content__group-label">
-                  <input class="form-content__group-input form-content__group-input--icon" type="checkbox" name="water">
+                  <input class="form-content__group-input form-content__group-input--checkbox" type="checkbox" name="water">
                   <span class="form-content__group-text-extra">Питьевая вода</span>
                 </label>
               </li>
               <li class="form-content__item">
                 <label class="form-content__group-label">
-                  <input class="form-content__group-input form-content__group-input--icon" type="checkbox" name="milk">
+                  <input class="form-content__group-input form-content__group-input--checkbox" type="checkbox" name="milk">
                   <span class="form-content__group-text-extra">Молоко</span>
                 </label>
               </li>
               <li class="form-content__item">
                 <label class="form-content__group-label">
-                  <input class="form-content__group-input form-content__group-input--icon" type="checkbox" name="vitamins">
+                  <input class="form-content__group-input form-content__group-input--checkbox" type="checkbox" name="vitamins">
                   <span class="form-content__group-text-extra">Витамины</span>
                 </label>
               </li>
             </ul>
           </fieldset>
+          <div class="form-content__submit">
           <button class="cat-data__button button button--primary" type="submit">Отправить заявку</button>
+          <p class="cat-data__footnote">* — Обязательные поля</p>
+          </div>
         </form>
-        <p class="cat-data__footnote">* — Обязательные поля</p>
       </div>
     </section>
 
