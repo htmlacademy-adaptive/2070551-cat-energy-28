@@ -1,1 +1,17 @@
-// В этом блоке стили пока что не нужны
+@media (min-width: @tablet-width) {
+  .main-catalog__wrapper {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto auto auto;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .main-catalog__wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+}
