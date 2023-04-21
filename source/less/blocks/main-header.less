@@ -1,7 +1,27 @@
+.main-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
 .main-header__logo {
   text-decoration: none;
 }
 
 .main-header__logo-icon {
   text-decoration: none;
+}
+
+.main-header__logo-tablet {
+  display: none;
+}
+
+@media (min-width: @tablet-width) {
+  .main-header__logo-tablet {
+    display: block;
+  }
+
+  .main-header__logo-mobile {
+    display: none;
+  }
 }

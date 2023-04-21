@@ -4,10 +4,6 @@
   background-color: @light-green;
 }
 
-.main-slide__wrapper {
-  width: 280px;
-}
-
 .main-slide__title {
   font-family: "Oswald", sans-serif;
   font-style: normal;
@@ -26,4 +22,69 @@
   line-height: 14px;
   color: @white;
   text-transform: uppercase;
+}
+
+.main-slide__img--tablet {
+  display: none;
+}
+
+.main-slide__img--desktop {
+  display: none;
+}
+
+@media (min-width: @tablet-width) {
+  .main-slide {
+    background: none;
+  }
+
+  .main-slide__wrapper {
+    display: flex;
+    flex-direction: column;
+    width: 709px;
+  }
+
+  .main-slide__title {
+    font-size: 60px;
+    line-height: 60px;
+    color: @black;
+    margin-left: 88px;
+  }
+
+  .main-slide__subtitle {
+    font-size: 20px;
+    line-height: 20px;
+    color: @black;
+    margin-left: 88px;
+  }
+
+  .main-slide__button {
+    margin-left: 88px;
+  }
+
+  .main-slide__img--mobile {
+    display: none;
+  }
+
+  .main-slide__img--tablet {
+    display: block;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .main-slide {
+    display: flex;
+    flex-direction: row;
+    background-image: url("/img/index/background-slide-cat-desktop.jpg");
+    background-repeat: no-repeat;
+    background-position: right;
+    background-color: @light-green;
+  }
+
+  .main-slide__img--tablet {
+    display: none;
+  }
+
+  .main-slide__img--desktop {
+    display: block;
+  }
 }

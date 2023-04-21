@@ -2,10 +2,6 @@
   background: @light-gray;
 }
 
-.example__wrapper {
-  width: 280px;
-}
-
 .example__title {
   font-family: "Oswald", sans-serif;
   font-style: normal;
@@ -24,4 +20,49 @@
   text-align: center;
   text-transform: uppercase;
   color: @black;
+}
+
+.example__content-wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+@media (min-width: @tablet-width) {
+  .example__title {
+    font-size: 60px;
+    line-height: 60px;
+  }
+
+  .example__text {
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  .example__content-wrapper {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .example__result-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+  }
+
+  .example__result {
+    font-size: 20px;
+    line-height: 20px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .example {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .example__result-wrapper {
+    flex-direction: row;
+    justify-content: space-between;
+  }
 }

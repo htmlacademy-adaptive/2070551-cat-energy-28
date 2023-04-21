@@ -14,3 +14,38 @@
   color: @black;
   text-transform: uppercase;
 }
+
+@media (min-width: @tablet-width) {
+  .main-nav__toogle {
+    display: none;
+  }
+
+  .main-nav__list {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 24px;
+  }
+
+  .main-nav {
+    width: 440px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .main-nav__list {
+    font-size: 20px;
+    line-height: 30px;
+  }
+
+  .main-nav__link {
+    color: @white;
+  }
+
+  .main-nav {
+    width: 478px;
+  }
+}

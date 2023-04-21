@@ -10,27 +10,33 @@
 
 <body class="page__body">
   <header class="main-header">
-    <div class="main-wrapper">
-      <a class="main-header__logo" href="#">
-        <img src="img/index/logo/logo-mobile.svg" alt="Логотип Cat Energy." width="34" height="38">
-      </a>
-      <a class="main-header__logo-icon" href="#">
-        <img src="img/index/logo/logo-icon.svg" alt="Cat Energy." width="101" height="18">
-      </a>
-      <button class="main-header__toogle" type="button"><span class="visually-hidden">Открыть меню</span></button>
-    </div>
+    <!-- <div class="main-header__wrapper"> -->
+    <a class="main-header__logo-tablet" href="#">
+      <img class="main-header__logo--tablet" src="img/index/logo/logo-tablet.png" alt="Логотип Cat Energy." width="174"
+        height="52">
+    </a>
+    <a class="main-header__logo-mobile" href="#">
+      <img class="main-header__logo--mobile" src="img/index/logo/logo-mobile.svg" alt="Логотип Cat Energy." width="34"
+        height="38">
+    </a>
+    <a class="main-header__logo-mobile" href="#">
+      <img class="main-header__logo--mobile" src="img/index/logo/logo-icon.svg" alt="Cat Energy." width="101"
+        height="18">
+    </a>
+    <!-- </div> -->
     <nav class="main-nav">
-        <ul class="main-nav__list">
-          <li class="main-nav__item">
-            <a class="main-nav__link" href="index.html">Главная</a>
-          </li>
-          <li class="main-nav__item">
-            <a class="main-nav__link" href="catalog.html">Каталог продукции</a>
-          </li>
-          <li class="main-nav__item main-nav__link--current">
-            <a class="main-nav__link" href="#">Подбор программы</a>
-          </li>
-        </ul>
+      <button class="main-nav__toogle" type="button"><span class="visually-hidden">Открыть меню</span></button>
+      <ul class="main-nav__list">
+        <li class="main-nav__item">
+          <a class="main-nav__link main-nav__link--current" href="#">Главная</a>
+        </li>
+        <li class="main-nav__item">
+          <a class="main-nav__link" href="catalog.html">Каталог продукции</a>
+        </li>
+        <li class="main-nav__item">
+          <a class="main-nav__link" href="form.html">Подбор программы</a>
+        </li>
+      </ul>
     </nav>
   </header>
 
@@ -38,18 +44,24 @@
     <section class="cat-data">
       <div class="cat-data__wrapper">
         <h1 class="cat-data__title">Подбор программы</h1>
+        <p class="cat-data__text">Заполните анкету, и мы подберем
+        программу питания для вашего кота</p>
         <form class="cat-data__form form-content" action="" method="post">
-          <fieldset class="form-content__group">
-            <p class="form-content__text">Заполните анкету, и мы подберем
-              программу питания для вашего кота</p>
+          <fieldset class="form-content__group form-content__group--cat-info">
+            <div class="form-content__group-wrapper">
             <label class="form-content__group-label" for="name">Имя:*</label>
             <input class="form-content__group-input" type="text" id="name" name="name" value="Барсик">
+            </div>
+            <div class="form-content__group-wrapper">
             <label class="form-content__group-label" for="weight">Вес (кг):*</label>
             <input class="form-content__group-input" type="text" id="weight" name="weight" value="7">
+            </div>
+            <div class="form-content__group-wrapper">
             <label class="form-content__group-label" for="age">Возраст (лет):</label>
             <input class="form-content__group-input" type="text" id="age" name="age" value="7">
+            </div>
           </fieldset>
-          <fieldset class="form-content__group">
+          <fieldset class="form-content__group form-content__group--purpose">
             <ul class="form-content__list">
               <li class="form-content__item">
                 <label class="form-content__group-label">
@@ -71,51 +83,59 @@
               </li>
             </ul>
           </fieldset>
-          <fieldset class="form-content__group">
+          <fieldset class="form-content__group form-content__group--contacts">
             <legend class="form-content__group-title">Контактные данные
               (владельца кота)</legend>
+          <div class="form-content__group-container">
+            <div class="form-content__group-wrapper">
             <label class="form-content__group-label" for="email">E-mail:*</label>
             <input class="form-content__group-input form-content__group-input--email" type="email" id="email" name="email" value="kuklachev@gmail.com">
+            </div>
+            <div class="form-content__group-wrapper">
             <label class="form-content__group-label" for="phone">Телефон:*</label>
             <input class="form-content__group-input form-content__group-input--tel" type="tel" id="phone" name="tel" value="8 (960) 900-60-90">
+            </div>
+          </div>
           </fieldset>
-          <fieldset class="form-content__group">
+          <fieldset class="form-content__group form-content__group--commentary">
             <legend class="form-content__group-title">Комментарий</legend>
             <textarea class="form-content__commentary" name="commentary" id="commentary" cols="33" rows="15">Расскажите обо всех повадках кота</textarea>
           </fieldset>
-          <fieldset class="form-content__group">
+          <fieldset class="form-content__group form-content__group--additional">
             <legend class="form-content__group-title">Дополнительно</legend>
-            <ul class="form-content__list">
+            <ul class="form-content__list form-content__list--additional">
               <li class="form-content__item">
                 <label class="form-content__group-label">
-                  <input class="form-content__group-input form-content__group-input--icon" type="checkbox" name="
+                  <input class="form-content__group-input form-content__group-input--checkbox" type="checkbox" name="
                   sugar-substitute" checked>
                   <span class="form-content__group-text-extra">Сахарозаменитель</span>
                 </label>
               </li>
               <li class="form-content__item">
                 <label class="form-content__group-label">
-                  <input class="form-content__group-input form-content__group-input--icon" type="checkbox" name="water">
+                  <input class="form-content__group-input form-content__group-input--checkbox" type="checkbox" name="water">
                   <span class="form-content__group-text-extra">Питьевая вода</span>
                 </label>
               </li>
               <li class="form-content__item">
                 <label class="form-content__group-label">
-                  <input class="form-content__group-input form-content__group-input--icon" type="checkbox" name="milk">
+                  <input class="form-content__group-input form-content__group-input--checkbox" type="checkbox" name="milk">
                   <span class="form-content__group-text-extra">Молоко</span>
                 </label>
               </li>
               <li class="form-content__item">
                 <label class="form-content__group-label">
-                  <input class="form-content__group-input form-content__group-input--icon" type="checkbox" name="vitamins">
+                  <input class="form-content__group-input form-content__group-input--checkbox" type="checkbox" name="vitamins">
                   <span class="form-content__group-text-extra">Витамины</span>
                 </label>
               </li>
             </ul>
           </fieldset>
+          <div class="form-content__submit">
           <button class="cat-data__button button button--primary" type="submit">Отправить заявку</button>
+          <p class="cat-data__footnote">* — Обязательные поля</p>
+          </div>
         </form>
-        <p class="cat-data__footnote">* — Обязательные поля</p>
       </div>
     </section>
 
@@ -124,9 +144,11 @@
   <footer class="page-footer">
     <div class="page-footer__partner-container">
       <h3 class="page-footer__partners">Приглашаем к сотрудничеству дилеров!</h3>
-      <address class="page-footer__address">ул. Большая
-        Конюшенная, д. 19/8
-        Санкт-Петербург</address>
+      <address class="page-footer__address">
+        <span class="page-footer__address-street">ул. Большая
+          Конюшенная, д. 19/8</span>
+        <span class="page-footer__address-city">Санкт-Петербург</span>
+        </address>
     </div>
     <div class="page-footer__map"></div>
     <div class="page-footer__contacts">
@@ -135,19 +157,23 @@
       </a>
       <div class="page-footer__socials social-media">
         <span class="visually-hidden">Наши социальные сети</span>
-          <a class="social-media__link vkontakte vkontakte--element" href="#"><span class="visually-hidden">Вконтакте</span>
-            <img src="img/index/socials/vkontakte.svg" alt="Вконтакте." width="27" height="17">
-          </a>
-          <a class="social-media__link youtube youtube--element" href="#"><span class="visually-hidden">Ютьюб</span>
-            <img src="img/index/socials/youtube.svg" alt="Ютьюб." width="24" height="19">
-          </a>
-          <a class="social-media__link telegram telegram--element" href="#"><span class="visually-hidden">Телеграм</span>
-            <img src="img/index/socials/telegram.svg" alt="Телеграм." width="20" height="18">
-          </a>
+        <a class="social-media__link social-media__link--vkontakte" href="#"><span
+            class="visually-hidden">Вконтакте</span>
+          <img src="img/index/socials/vkontakte.svg" alt="Вконтакте." width="27" height="17">
+        </a>
+        <a class="social-media__link social-media__link--youtube" href="#"><span class="visually-hidden">Ютьюб</span>
+          <img src="img/index/socials/youtube.svg" alt="Ютьюб." width="24" height="19">
+        </a>
+        <a class="social-media__link social-media__link--telegram" href="#"><span
+            class="visually-hidden">Телеграм</span>
+          <img src="img/index/socials/telegram.svg" alt="Телеграм." width="20" height="18">
+        </a>
       </div>
       <div class="page-footer__academy html-academy">
-        <span class="html-academy__title">HTML Academy</span>
-        <img src="img/index/logo/html-academy-logo.svg" alt="Логотип HTML Academy." width="27" height="34">
+        <a class="html-academy__link html-academy__link--logo" href="#">
+          <span class="html-academy__title">HTML Academy</span>
+          <img src="img/index/logo/html-academy-logo.svg" alt="Логотип HTML Academy." width="27" height="34">
+        </a>
       </div>
     </div>
   </footer>

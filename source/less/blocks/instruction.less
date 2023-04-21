@@ -1,7 +1,3 @@
-.instruction {
-  width: 280px;
-}
-
 .instruction__title {
   font-family: "Oswald", sans-serif;
   font-style: normal;
@@ -13,7 +9,43 @@
 }
 
 .instruction__list {
+  display: flex;
+  flex-direction: column;
   list-style-type: none;
   padding: 0;
   margin: 0;
+}
+
+.instruction__text {
+  max-width: 199px;
+}
+
+@media (min-width: @tablet-width) {
+  .instruction__title {
+    font-size: 60px;
+    line-height: 60px;
+  }
+
+  .instruction__list {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: 280px 280px;
+  }
+
+  .instruction__text {
+    max-width: 245px;
+    font-size: 16px;
+    line-height: 24px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .instruction__list {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .example__result:last-of-type {
+    margin-left: 63px;
+  }
 }

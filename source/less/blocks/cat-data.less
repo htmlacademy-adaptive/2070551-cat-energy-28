@@ -1,7 +1,3 @@
-.cat-data__wrapper {
-  width: 280px;
-}
-
 .cat-data__footnote {
   color: @black;
 }
@@ -13,4 +9,33 @@
   font-size: 36px;
   line-height: 36px;
   color: @black;
+  border-top: 1px solid @gray;
+}
+
+.cat-data__text {
+  font-family: "Oswald", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+  text-transform: uppercase;
+  color: @black;
+  max-width: 230px;
+}
+
+@media (min-width: @tablet-width) {
+  .cat-data__title {
+    font-size: 60px;
+    line-height: 60px;
+    border: none;
+  }
+
+  .cat-data__footnote {
+    font-size: 16px;
+  }
+
+  .cat-data__text {
+    font-size: 20px;
+    line-height: 30px;
+  }
 }
