@@ -2,9 +2,11 @@
   display: flex;
   flex-direction: column;
   align-items: flex-start;
+  padding: 30px 20px 20px;
 }
 
 .production__title {
+  position: relative;
   font-family: "Oswald", sans-serif;
   font-style: normal;
   font-weight: 400;
@@ -12,6 +14,33 @@
   line-height: 37px;
   text-transform: uppercase;
   color: @black;
+  margin: 0;
+  margin-bottom: 22px;
+  padding-left: 69px;
+}
+
+.production__title--cat-sitting::before,
+.production__title--puma::before {
+  content: "";
+  position: absolute;
+  top: -6px;
+  left: 0;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: @green;
+}
+
+.production__title--cat-sitting::before {
+  background-image: url("/img/index/products/cat-sitting.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.production__title--puma::before {
+  background-image: url("/img/index/products/puma.svg");
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 .production__button {
@@ -28,11 +57,29 @@
   text-transform: uppercase;
   color: @black;
   padding: 0;
-  padding-right: 47px;
+
+  &:active {
+    opacity: 0.3;
+  }
+}
+
+.production__button--icon {
+  margin-left: 15px;
 }
 
 .production__description {
-  width: 227px;
+  width: auto;
+  position: relative;
+  margin-bottom: 38px;
+}
+
+.production__description::after {
+  content: "";
+  position: absolute;
+  bottom: -23px;
+  left: 0;
+  width: 100%;
+  border-bottom: 1px solid @gray;
 }
 
 @media (min-width: @tablet-width) {
