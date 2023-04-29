@@ -22,7 +22,15 @@
   color: @black;
   text-transform: uppercase;
   border-top: 1px solid @gray-fourth;
-  padding: 22px 0 24px 0;
+  padding: 24px;
+  margin-left: -20px;
+  margin-right: -20px;
+}
+
+.main-nav__item:last-child {
+  border-bottom: 1px solid @gray-fourth;
+  margin-left: -20px;
+  margin-right: -20px;
 }
 
 .main-nav--opened {
@@ -30,7 +38,7 @@
 }
 
 @media (min-width: @tablet-width) {
-  .main-nav__toogle {
+  .main-header__toggle {
     display: none;
   }
 

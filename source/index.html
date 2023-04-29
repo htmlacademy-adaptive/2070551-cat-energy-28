@@ -10,7 +10,8 @@
 
 <body class="page__body">
   <header class="main-header">
-    <div class="main-header_container">
+    <div class="main-header__container">
+      <div class="main-header__logo-wrapper">
     <a class="main-header__logo-mobile" href="#">
       <img class="main-header__logo--mobile" src="img/index/logo/logo-mobile.svg" alt="Логотип Cat Energy." width="34"
         height="38">
@@ -19,8 +20,9 @@
       <img class="main-header__logo--mobile" src="img/index/logo/logo-icon.svg" alt="Cat Energy." width="101"
         height="18">
     </a>
-    <button class="main-header__toggle main-header__toggle--closed" type="button"><span class="visually-hidden">Открыть меню</span></button>
-    <nav class="main-nav main-nav--opened">
+    <button class="main-header__toggle main-header__toggle--closed main-header__toggle--nojs" type="button"><span class="visually-hidden">Открыть меню</span></button>
+  </div>
+    <nav class="main-nav main-nav--opened main-nav--nojs">
       <ul class="main-nav__list">
         <li class="main-nav__item">
           <a class="main-nav__link main-nav__link--current" href="#">Главная</a>
@@ -44,10 +46,6 @@
         <h3 class="main-slide__subtitle">Занялся собой? Займись котом!</h3>
         <img class="main-slide__img--mobile" src="img/index/index-can-mobile-1.png" alt="Кошачий корм с курицей."
           width="280" height="270">
-        <img class="main-slide__img--tablet" src="img/index/index-can-tablet.png" alt="Кошачий корм с курицей."
-          width="709" height="609">
-        <img class="main-slide__img--desktop" src="img/index/index-can-desktop.png" alt="Кошачий корм с курицей."
-          width="552" height="499">
         <button class="main-slide__button button button--primary" type="button">Подобрать программу</button>
       </div>
     </section>
@@ -159,6 +157,9 @@
       </div>
     </div>
   </footer>
+
+
+  <script src="js/script.js"></script>
 </body>
 
 </html>
