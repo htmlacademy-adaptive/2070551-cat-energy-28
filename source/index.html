@@ -10,11 +10,7 @@
 
 <body class="page__body">
   <header class="main-header">
-    <!-- <div class="main-header__wrapper"> -->
-    <a class="main-header__logo-tablet" href="#">
-      <img class="main-header__logo--tablet" src="img/index/logo/logo-tablet.png" alt="Логотип Cat Energy." width="174"
-        height="52">
-    </a>
+    <div class="main-header_container">
     <a class="main-header__logo-mobile" href="#">
       <img class="main-header__logo--mobile" src="img/index/logo/logo-mobile.svg" alt="Логотип Cat Energy." width="34"
         height="38">
@@ -23,9 +19,8 @@
       <img class="main-header__logo--mobile" src="img/index/logo/logo-icon.svg" alt="Cat Energy." width="101"
         height="18">
     </a>
-    <!-- </div> -->
+    <button class="main-header__toggle main-header__toggle--closed" type="button"><span class="visually-hidden">Открыть меню</span></button>
     <nav class="main-nav main-nav--opened">
-      <button class="main-nav__toogle" type="button"><span class="visually-hidden">Открыть меню</span></button>
       <ul class="main-nav__list">
         <li class="main-nav__item">
           <a class="main-nav__link main-nav__link--current" href="#">Главная</a>
@@ -38,6 +33,7 @@
         </li>
       </ul>
     </nav>
+  </div>
   </header>
 
   <main class="main-container">
