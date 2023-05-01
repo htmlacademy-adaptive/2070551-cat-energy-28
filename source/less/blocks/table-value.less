@@ -6,6 +6,7 @@
   line-height: 100%;
   color: @light-black;
   text-transform: lowercase;
+  margin-top: 8px;
 }
 
 .table-value__data {
@@ -15,4 +16,29 @@
   font-size: 24px;
   line-height: 24px;
   color: @black;
+}
+
+.table-value {
+  display: flex;
+  justify-content: space-between;
+}
+
+.table-value__column {
+  max-width: 124px;
+  width: 100%;
+  padding: 15px 0 5px 0;
+  text-align: center;
+  border: 1px solid @gray-third;
+  border-radius: 5px;
+}
+
+.table-value__wrapper {
+  max-width: 80px;
+  padding: 0 10px;
+  margin: 0 auto -20px;
+  background-color: @light-gray;
+}
+
+.example__result-wrapper {
+  margin: 20px auto;
 }
