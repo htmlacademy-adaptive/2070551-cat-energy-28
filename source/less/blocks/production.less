@@ -1,8 +1,45 @@
 .production {
   display: flex;
+  position: relative;
   flex-direction: column;
   align-items: flex-start;
   padding: 30px 20px 20px;
+
+  @media (min-width: @tablet-width) {
+    padding: 0;
+  }
+}
+
+.production--cat-sitting::after,
+.production--puma::after {
+  @media (min-width: @tablet-width) {
+    content: "";
+    position: absolute;
+    width: 200px;
+    height: 211px;
+    right: 62px;
+    top: 81px;
+  }
+}
+
+.production--cat-sitting::after {
+  @media (min-width: @tablet-width) {
+  background-image: url("/img/index/products/cat-sitting-tablet.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  }
+}
+
+.production--puma::after {
+  @media (min-width: @tablet-width) {
+  background-image: url("/img/index/products/puma-tablet.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 268px;
+  height: 200px;
+  top: 91px;
+  right: 27px;
+  }
 }
 
 .production__title {
@@ -17,6 +54,15 @@
   margin: 0;
   margin-bottom: 22px;
   padding-left: 70px;
+
+  @media (min-width: @tablet-width) {
+    font-size: 36px;
+    line-height: 36px;
+    margin-top: 77px;
+    margin-left: 54px;
+    margin-bottom: 0;
+    padding: 0;
+  }
 }
 
 .production__title--cat-sitting::before,
@@ -27,6 +73,10 @@
   left: 0;
   width: 50px;
   height: 50px;
+
+  @media (min-width: @tablet-width) {
+    display: none;
+  }
 }
 
 .production__title--cat-sitting::before {
@@ -61,6 +111,13 @@
   &:active {
     opacity: 0.3;
   }
+
+  @media (min-width: @tablet-width) {
+    margin-left: 54px;
+    margin-bottom: 53px;
+    font-size: 20px;
+    line-height: 30px;
+  }
 }
 
 .production__button--icon {
@@ -71,6 +128,17 @@
   width: auto;
   position: relative;
   margin-bottom: 38px;
+
+  @media (min-width: @tablet-width) {
+    font-size: 16px;
+    line-height: 24px;
+    color: @black;
+    margin-left: 54px;
+    margin-top: 24px;
+    margin-bottom: 48px;
+    padding: 0;
+    width: 340px;
+  }
 }
 
 .production__description::after {
@@ -80,24 +148,9 @@
   left: 0;
   width: 100%;
   border-bottom: 1px solid @gray;
-}
 
-@media (min-width: @tablet-width) {
-  .production__title {
-    font-size: 36px;
-    line-height: 36px;
-  }
-
-  .production__description {
-    font-size: 16px;
-    line-height: 24px;
-    color: @black;
-    width: 340px;
-  }
-
-  .production__button {
-    font-size: 20px;
-    line-height: 30px;
+  @media (min-width: @tablet-width) {
+    display: none;
   }
 }
 
