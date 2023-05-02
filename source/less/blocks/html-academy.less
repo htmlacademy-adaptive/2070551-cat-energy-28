@@ -1,14 +1,20 @@
 .html-academy {
-  display: flex;
-  align-items: center;
   width: 100%;
-  justify-content: center;
+
+  @media (min-width: @tablet-width) {
+    width: auto;
+  }
 }
 
 .html-academy__title {
+  width: max-content;
   font-size: 16px;
   line-height: 19px;
   color: @light-black;
+
+  @media (min-width: @tablet-width) {
+    margin-right: 28px;
+  }
 }
 
 .html-academy__link {
@@ -18,4 +24,8 @@
   justify-content: space-between;
   width: 100%;
   margin: 20px 0 40px;
+
+  @media (min-width: @tablet-width) {
+    margin: 0;
+  }
 }

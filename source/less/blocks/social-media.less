@@ -10,6 +10,12 @@
   display: flex;
   justify-content: center;
   align-items: center;
+
+  @media (min-width: @tablet-width) {
+    border: none;
+    padding: 0;
+    margin-left: 28px;
+  }
 }
 
 .social-media__link:not(:first-of-type) {
