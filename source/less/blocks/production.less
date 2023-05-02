@@ -28,6 +28,10 @@
     background-repeat: no-repeat;
     background-position: center;
   }
+
+  @media (min-width: @desktop-width) {
+    display: none;
+  }
 }
 
 .production--puma::after {
@@ -39,6 +43,10 @@
     height: 200px;
     top: 91px;
     right: 27px;
+  }
+
+  @media (min-width: @desktop-width) {
+    display: none;
   }
 }
 
@@ -63,6 +71,11 @@
     margin-bottom: 0;
     padding: 0;
   }
+
+  @media (min-width: @desktop-width) {
+    padding-left: 214px;
+    margin-left: 0;
+  }
 }
 
 .production__title--cat-sitting::before,
@@ -77,12 +90,24 @@
   @media (min-width: @tablet-width) {
     display: none;
   }
+
+  @media (min-width: @desktop-width) {
+    display: block;
+    left: 52px;
+    width: 100px;
+    height: 106px;
+    top: -100%;
+  }
 }
 
 .production__title--cat-sitting::before {
   background-image: url("/img/index/products/cat-sitting.svg");
   background-repeat: no-repeat;
   background-position: center;
+
+  @media (min-width: @desktop-width) {
+    background-image: url("/img/index/products/cat-sitting-desktop.svg");
+  }
 }
 
 .production__title--puma::before {
@@ -91,6 +116,13 @@
   background-position: center;
   width: 67px;
   left: -10px;
+
+  @media (min-width: @desktop-width) {
+    background-image: url("/img/index/products/puma-desktop.svg");
+    width: 134px;
+    height: 100px;
+    left: 33px;
+  }
 }
 
 .production__button {
@@ -139,6 +171,12 @@
     padding: 0;
     width: 340px;
   }
+
+  @media (min-width: @desktop-width) {
+    margin-top: 73px;
+    margin-bottom: 23px;
+    min-width: 450px;
+  }
 }
 
 .production__description::after {
@@ -151,11 +189,5 @@
 
   @media (min-width: @tablet-width) {
     display: none;
-  }
-}
-
-@media (min-width: @desktop-width) {
-  .production__description {
-    width: 457px;
   }
 }

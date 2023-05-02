@@ -1,3 +1,7 @@
+.page-footer {
+  position: relative;
+}
+
 .page-footer__partners {
   font-family: "Oswald", sans-serif;
   font-style: normal;
@@ -13,6 +17,10 @@
     padding: 0;
     font-size: 20px;
     line-height: 26px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-right: 87px;
   }
 }
 
@@ -41,6 +49,10 @@
     align-items: center;
     padding: 63px 30px;
   }
+
+  @media (min-width: @desktop-width) {
+    padding: 76px 110px;
+  }
 }
 
 .page-footer__partner-container {
@@ -52,6 +64,14 @@
 
   @media (min-width: @tablet-width) {
     padding: 156px 70px 56px;
+  }
+
+  @media (min-width: @desktop-width) {
+    position: absolute;
+    padding: 56px 60px 56px 80px;
+    background-color: @white;
+    top: 140px;
+    left: 110px;
   }
 }
 

@@ -17,6 +17,10 @@
     margin-right: 56px;
     bottom: -47px;
   }
+
+  @media (min-width: @desktop-width) {
+    display: none;
+  }
 }
 
 .instruction__title {
@@ -48,6 +52,12 @@
     display: grid;
     grid-template-columns: auto auto;
     grid-template-rows: 280px 280px;
+  }
+
+  @media (min-width: @desktop-width) {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
   }
 }
 
@@ -90,6 +100,12 @@
     bottom: -35px;
     right: 145px;
     z-index: -1;
+  }
+
+  @media (min-width: @desktop-width) {
+    top: 13px;
+    width: 112px;
+    right: 30px;
   }
 }
 
@@ -154,7 +170,6 @@
   margin: 0;
 
   @media (min-width: @tablet-width) {
-    position: absolute;
     max-width: 245px;
     font-size: 16px;
     line-height: 24px;
@@ -162,11 +177,6 @@
 }
 
 @media (min-width: @desktop-width) {
-  .instruction__list {
-    display: flex;
-    flex-direction: row;
-  }
-
   .example__result:last-of-type {
     margin-left: 63px;
   }
