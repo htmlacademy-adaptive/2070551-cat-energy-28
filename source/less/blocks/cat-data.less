@@ -5,13 +5,11 @@
   @media (min-width: @tablet-width) {
     padding: 0 39px;
   }
-}
 
-// .cat-data__wrapper {
-//   @media (min-width: @tablet-width) {
-//     padding: 0 39px;
-//   }
-// }
+  @media (min-width: @desktop-width) {
+    padding: 0;
+  }
+}
 
 .cat-data::before {
   position: absolute;
@@ -34,7 +32,7 @@
   @media (min-width: @tablet-width) {
     font-size: 16px;
     margin-left: 64px;
-    width: 100%;
+    width: auto;
   }
 }
 
@@ -52,6 +50,10 @@
     font-size: 60px;
     line-height: 60px;
     border: none;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-top: 77px;
   }
 }
 
@@ -81,5 +83,9 @@
   @media (min-width: @tablet-width) {
     margin-top: 54px;
     margin-bottom: 72px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 100%;
   }
 }

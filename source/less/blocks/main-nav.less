@@ -63,6 +63,12 @@
   }
 }
 
+.main-nav__link.main-nav__link--form {
+  @media (min-width: @desktop-width) {
+    color: @black;
+  }
+}
+
 .main-nav__item:last-child {
   @media (min-width: @tablet-width) {
     border: none;
@@ -87,6 +93,12 @@
 
   @media (min-width: @tablet-width) {
     background: @white;
+  }
+}
+
+.main-nav__link--form.main-nav__link--current::after {
+  @media (min-width: @tablet-width) {
+    background: @green;
   }
 }
 
