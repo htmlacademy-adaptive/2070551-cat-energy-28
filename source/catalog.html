@@ -10,34 +10,36 @@
 
 <body class="page__body">
   <header class="main-header">
-    <!-- <div class="main-header__wrapper"> -->
-    <a class="main-header__logo-tablet" href="#">
-      <img class="main-header__logo--tablet" src="img/index/logo/logo-tablet.png" alt="Логотип Cat Energy." width="174"
-        height="52">
-    </a>
+    <div class="main-header__container main-header__container--border">
+      <div class="main-header__logo-wrapper">
     <a class="main-header__logo-mobile" href="#">
       <img class="main-header__logo--mobile" src="img/index/logo/logo-mobile.svg" alt="Логотип Cat Energy." width="34"
         height="38">
+    </a>
+    <a class="main-header__logo-tablet" href="#">
+      <img class="main-header__logo--tablet" src="img/index/logo/logo-tablet.svg" alt="Логотип Cat Energy." width="174"
+        height="52">
     </a>
     <a class="main-header__logo-mobile" href="#">
       <img class="main-header__logo--mobile" src="img/index/logo/logo-icon.svg" alt="Cat Energy." width="101"
         height="18">
     </a>
-    <!-- </div> -->
-    <nav class="main-nav">
-      <button class="main-nav__toogle" type="button"><span class="visually-hidden">Открыть меню</span></button>
+    <button class="main-header__toggle main-header__toggle--nojs" type="button"><span class="visually-hidden">Открыть меню</span></button>
+  </div>
+    <nav class="main-nav main-nav--nojs">
       <ul class="main-nav__list">
         <li class="main-nav__item">
-          <a class="main-nav__link" href="#">Главная</a>
+          <a class="main-nav__link main-nav__link--current" href="#">Главная</a>
         </li>
         <li class="main-nav__item">
-          <a class="main-nav__link main-nav__link--current" href="catalog.html">Каталог продукции</a>
+          <a class="main-nav__link" href="catalog.html">Каталог продукции</a>
         </li>
         <li class="main-nav__item">
           <a class="main-nav__link" href="form.html">Подбор программы</a>
         </li>
       </ul>
     </nav>
+  </div>
   </header>
 
   <main class="main-container">
@@ -283,10 +285,21 @@
         <span class="page-footer__address-city">Санкт-Петербург</span>
         </address>
     </div>
-    <div class="page-footer__map"></div>
+    <div class="page-footer__map">
+      <h2 class="visually-hidden">Как до нас добраться?</h2>
+      <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d1996.822607321338!2d30.3174089!3d59.968266!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5afc31%3A0x5f2ac55f567b2400!2sHTML%20Academy!5e0!3m2!1sru!2sru!4v1682962802003!5m2!1sru!2sru"
+      width="100%"
+      height="362"
+      style="border:0;"
+      allowfullscreen=""
+      loading="lazy"
+      referrerpolicy="no-referrer-when-downgrade"
+      title="Офис компании по адресу набережная реки Карповки, 5, литера П, Санкт-Петербург">
+      </iframe>
+    </div>
     <div class="page-footer__contacts">
       <a class="page-footer__logo-icon" href="#">
-        <img src="img/index/logo/logo-icon.svg" alt="Cat Energy." width="101" height="18">
+        <img src="img/index/logo/logo-footer.svg" alt="Cat Energy." width="101" height="18">
       </a>
       <div class="page-footer__socials social-media">
         <span class="visually-hidden">Наши социальные сети</span>

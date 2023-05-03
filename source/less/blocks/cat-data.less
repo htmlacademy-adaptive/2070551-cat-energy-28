@@ -1,5 +1,21 @@
+.cat-data {
+  position: relative;
+  padding: 0 20px;
+}
+
+.cat-data::before {
+  position: absolute;
+  content: "";
+  width: 110%;
+  height: 1px;
+  background-color: @gray;
+  top: -27px;
+  left: -20px;
+}
+
 .cat-data__footnote {
   color: @black;
+  margin-top: 21px;
 }
 
 .cat-data__title {
@@ -9,7 +25,8 @@
   font-size: 36px;
   line-height: 36px;
   color: @black;
-  border-top: 1px solid @gray;
+  margin: 0;
+  margin-top: 27px;
 }
 
 .cat-data__text {
@@ -21,6 +38,12 @@
   text-transform: uppercase;
   color: @black;
   max-width: 230px;
+  margin: 0;
+  margin-top: 37px;
+}
+
+.cat-data__button {
+  margin-top: 34px;
 }
 
 @media (min-width: @tablet-width) {

@@ -3,23 +3,43 @@
   flex-direction: column;
   margin: 0;
   padding: 0;
+  border: none;
 }
 
 .form-content__list {
   list-style-type: none;
   padding: 0;
   margin: 0;
+  margin-top: 7px;
+}
+
+.form-content__item:last-of-type {
+  margin-bottom: 4px;
 }
 
 .form-content__group-title {
+  position: relative;
   font-family: "Oswald", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 36px;
   line-height: 36px;
   color: @black;
+  background-color: @white;
   margin: 0;
   padding: 0;
+  padding-right: 20px;
+}
+
+.form-content__group-title::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  width: 100vw;
+  height: 2px;
+  margin-top: 2px;
+  background: @green;
+  z-index: -1;
 }
 
 .form-content__group-label {
@@ -31,6 +51,8 @@
   text-transform: uppercase;
   color: @light-black;
   min-width: max-content;
+  display: flex;
+  align-items: center;
 }
 
 .form-content__group-input {
@@ -43,6 +65,9 @@
   color: @light-black;
   margin-left: 13px;
   width: 100%;
+  height: 45px;
+  box-sizing: border-box;
+  border: 1px solid @gray-secondary;
 }
 
 .form-content__commentary {
@@ -53,6 +78,9 @@
   line-height: 18px;
   text-transform: uppercase;
   color: @light-black;
+  margin-top: 38px;
+  margin-bottom: 23px;
+  border: 1px solid @gray-secondary;
 }
 
 .form-content__group-text-extra {
@@ -60,31 +88,56 @@
 }
 
 .form-content__group--cat-info {
+  position: relative;
   border: none;
+  margin-top: 39px;
+}
+
+.form-content__group--cat-info::after {
+  position: absolute;
+  content: "";
+  width: 120%;
+  height: 1px;
+  background-color: @gray;
+  bottom: 0;
+  left: -20px;
 }
 
 .form-content__group--purpose {
-  border: none;
-  border-top: 1px solid @gray;
-  border-bottom: 1px solid @gray;
+  position: relative;
+}
+
+.form-content__group--purpose::after {
+  position: absolute;
+  content: "";
+  width: 120%;
+  height: 1px;
+  background-color: @gray;
+  bottom: 0;
+  left: -20px;
+}
+
+.form-content__list--additional {
+  margin-top: 34px;
 }
 
 .form-content__group--contacts {
-  border: none;
+  margin-top: 30px;
 }
 
-.form-content__group--commentary {
-  border: none;
-}
-
-.form-content__group--additional {
-  border: none;
+.form-content__group--contacts .form-content__group-container {
+  margin-top: 34px;
 }
 
 .form-content__group-wrapper {
   display: flex;
   align-items: center;
   width: 100%;
+  margin-bottom: 14px;
+}
+
+.form-content__group-wrapper:last-of-type {
+  margin-bottom: 24px;
 }
 
 .form-content__group-input--radio,
