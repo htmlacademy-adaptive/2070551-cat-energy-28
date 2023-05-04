@@ -1,7 +1,15 @@
 .product-card {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  position: relative;
+}
+
+.product-card::after {
+  position: absolute;
+  content: "";
+  width: 110%;
+  height: 1px;
+  background-color: @gray-fourth;
+  bottom: 0;
+  left: -20px;
 }
 
 .product-card__title {
@@ -13,11 +21,33 @@
   text-transform: uppercase;
   color: @black-secondary;
   max-width: 76px;
+  margin: 0;
+  margin-top: 19px;
 }
 
 .product-card__wrapper {
   display: flex;
   align-items: center;
+}
+
+.product-card__link {
+  text-decoration: none;
+  flex-basis: 50%;
+  max-width: 50%;
+  text-align: center;
+  margin-top: 19px;
+}
+
+.product-card__image--small {
+  flex-basis: 50%;
+}
+
+.product-card__info-wrapper {
+  flex-basis: 50%;
+}
+
+.product-card__button {
+  margin: 25px 0;
 }
 
 @media (min-width: @tablet-width) {

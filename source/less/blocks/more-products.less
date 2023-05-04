@@ -1,4 +1,5 @@
 .more-products {
+  position: relative;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -6,6 +7,7 @@
 
 .more-products__title {
   margin: 0;
+  margin-top: 80px;
   padding: 0;
   font-family: "Oswald", sans-serif;
   font-style: normal;
@@ -16,6 +18,31 @@
   color: @black-third;
 }
 
+.more-products--icon::before {
+  position: absolute;
+  content: "";
+  width: 30px;
+  height: 30px;
+  top: 25px;
+  background-image: url("/img/catalog/products/plus-icon.svg");
+}
+
+.more-products--icon::after {
+  position: absolute;
+  content: "";
+  width: 110%;
+  height: 1px;
+  background-color: @gray-fourth;
+  bottom: 0;
+  left: -20px;
+}
+
 .more-products__subtitle {
   line-height: 16px;
+  margin: 8px 0 21px;
+  padding: 0;
+}
+
+.more-products__button {
+  margin-bottom: 25px;
 }
