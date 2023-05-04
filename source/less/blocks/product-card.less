@@ -4,6 +4,10 @@
   @media (min-width: @tablet-width) {
     background-color: @dark-white;
   }
+
+  @media (min-width: @desktop-width) {
+    padding: 0 20px;
+  }
 }
 
 .product-card::after {
@@ -74,10 +78,4 @@
 
 .product-card__button {
   margin: 25px 0;
-}
-
-@media (min-width: @desktop-width) {
-  .product-card {
-    width: 245px;
-  }
 }

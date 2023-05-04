@@ -46,11 +46,11 @@
   @media (min-width: @tablet-width) {
     padding: 0;
   }
-}
 
-@media (min-width: @desktop-width) {
-  .additional-catalog__wrapper {
-    display: flex;
-    flex-direction: row;
+  @media (min-width: @desktop-width) {
+    display: grid;
+    grid-template-columns: auto 245px;
+    column-gap: 80px;
+    margin-bottom: 86px;
   }
 }
