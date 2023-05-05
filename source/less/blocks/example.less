@@ -13,15 +13,24 @@
   }
 }
 
-.example::after {
+.example::before {
   position: absolute;
   content: "";
   width: 120%;
   height: 100%;
-  background-color: @dark-white;
+  background-color: @light-gray;
   z-index: -1;
-  top: 205px;
   left: -110px;
+
+  @media (min-width: @tablet-width) {
+    display: none;
+  }
+
+  @media (min-width: @desktop-width) {
+    display: block;
+    width: 140%;
+    left: -200px;
+  }
 }
 
 .example__wrapper {
@@ -85,6 +94,7 @@
 .example__content-wrapper {
   display: flex;
   flex-direction: column;
+  text-align: center;
 
   @media (min-width: @tablet-width) {
     flex-direction: row;
@@ -120,9 +130,9 @@
 
 .example__proof-wrapper {
   position: relative;
+  display: flex;
 
   @media (min-width: @tablet-width) {
-    display: flex;
     justify-content: center;
   }
 
