@@ -14,6 +14,11 @@
   }
 }
 
+.main-header__icons-wrapper {
+  display: flex;
+  align-items: center;
+}
+
 .main-header__logo-wrapper {
   display: flex;
   justify-content: space-between;
@@ -22,9 +27,15 @@
 }
 
 .main-header__logo-mobile {
+  text-decoration: none;
+
   @media (min-width: @tablet-width) {
     display: none;
   }
+}
+
+.main-header__logo-mobile:not(:first-of-type) {
+  margin-left: 56px;
 }
 
 .main-header__logo-tablet {
@@ -101,4 +112,8 @@
   .main-header__logo-tablet {
     display: block;
   }
+}
+
+.main-header__toggle--nojs {
+  display: none;
 }
