@@ -1,7 +1,6 @@
 .product-desc {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+  width: 100%;
+  border-collapse: collapse;
 }
 
 .product-desc__row {
@@ -13,15 +12,16 @@
   color: @light-black;
 }
 
+.product-desc__data {
+  text-align: right;
+}
+
 .product-desc__header {
   font-weight: 400;
+  text-align: left;
 }
 
 @media (min-width: @tablet-width) {
-  .product-desc {
-    border-collapse: collapse;
-  }
-
   .product-desc__row {
     font-size: 16px;
     border-bottom: 1px solid @gray-third;

@@ -1,8 +1,18 @@
+.main-catalog__products {
+  padding: 0 20px;
+
+  @media (min-width: @desktop-width) {
+    width: 205px;
+    padding: 0;
+  }
+}
+
 @media (min-width: @tablet-width) {
   .main-catalog__wrapper {
     display: grid;
-    grid-template-columns: auto auto;
+    grid-template-columns: 1fr 1fr;
     grid-template-rows: auto auto auto auto;
+    gap: 60px;
   }
 }
 
@@ -10,7 +20,6 @@
   .main-catalog__wrapper {
     display: flex;
     flex-direction: row;
-    justify-content: flex-start;
     align-items: center;
     flex-wrap: wrap;
   }

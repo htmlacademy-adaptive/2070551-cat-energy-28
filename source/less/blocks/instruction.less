@@ -1,3 +1,28 @@
+.instruction {
+  padding: 0 20px 20px 20px;
+  position: relative;
+
+  @media (min-width: @tablet-width) {
+    padding: 0;
+  }
+}
+
+.instruction::after {
+  @media (min-width: @tablet-width) {
+    position: absolute;
+    content: "";
+    width: 100%;
+    border-bottom: 1px solid @gray-fourth;
+    margin-left: -30px;
+    margin-right: 56px;
+    bottom: -47px;
+  }
+
+  @media (min-width: @desktop-width) {
+    display: none;
+  }
+}
+
 .instruction__title {
   font-family: "Oswald", sans-serif;
   font-style: normal;
@@ -6,6 +31,14 @@
   line-height: 40px;
   color: @black;
   margin: 0;
+  margin-bottom: 40px;
+
+  @media (min-width: @tablet-width) {
+    font-size: 60px;
+    line-height: 60px;
+    margin-top: 45px;
+    margin-bottom: 32px;
+  }
 }
 
 .instruction__list {
@@ -14,25 +47,129 @@
   list-style-type: none;
   padding: 0;
   margin: 0;
-}
 
-.instruction__text {
-  max-width: 199px;
-}
-
-@media (min-width: @tablet-width) {
-  .instruction__title {
-    font-size: 60px;
-    line-height: 60px;
-  }
-
-  .instruction__list {
+  @media (min-width: @tablet-width) {
     display: grid;
     grid-template-columns: auto auto;
     grid-template-rows: 280px 280px;
   }
 
-  .instruction__text {
+  @media (min-width: @desktop-width) {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+
+.instruction__item {
+  display: flex;
+  align-items: center;
+  position: relative;
+  margin-bottom: 20px;
+
+  @media (min-width: @tablet-width) {
+    padding: 151px 26px 57px 0;
+  }
+}
+
+.instruction__item::before {
+  content: "";
+  display: block;
+  flex-shrink: 0;
+  margin-right: 20px;
+  width: 60px;
+  height: 60px;
+  background-color: @green;
+
+  @media (min-width: @tablet-width) {
+    position: absolute;
+    width: 80px;
+    height: 80px;
+    top: 40px;
+    left: 0;
+    margin: 0;
+  }
+}
+
+.instruction__item::after {
+  @media (min-width: @tablet-width) {
+    position: absolute;
+    content: "";
+    width: 120px;
+    height: 280px;
+    bottom: -35px;
+    right: 145px;
+    z-index: -1;
+  }
+
+  @media (min-width: @desktop-width) {
+    top: 13px;
+    width: 112px;
+    right: 30px;
+  }
+}
+
+.instruction__item--leaf::before {
+  background-image: url("/img/index/instruction/leaf-icon.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.instruction__item--leaf::after {
+  @media (min-width: @tablet-width) {
+    background-image: url("/img/index/instruction/background-one.png");
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+}
+
+.instruction__item--powder::before {
+  background-image: url("/img/index/instruction/powder-icon.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.instruction__item--powder::after {
+  @media (min-width: @tablet-width) {
+    background-image: url("/img/index/instruction/background-two.png");
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+}
+
+.instruction__item--dinner::before {
+  background-image: url("/img/index/instruction/dinner-icon.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.instruction__item--dinner::after {
+  @media (min-width: @tablet-width) {
+    background-image: url("/img/index/instruction/background-three.png");
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+}
+
+.instruction__item--alarm::before {
+  background-image: url("/img/index/instruction/alarm-icon.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.instruction__item--alarm::after {
+  @media (min-width: @tablet-width) {
+    background-image: url("/img/index/instruction/background-four.png");
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+}
+
+.instruction__text {
+  width: auto;
+  margin: 0;
+
+  @media (min-width: @tablet-width) {
     max-width: 245px;
     font-size: 16px;
     line-height: 24px;
@@ -40,11 +177,6 @@
 }
 
 @media (min-width: @desktop-width) {
-  .instruction__list {
-    display: flex;
-    flex-direction: row;
-  }
-
   .example__result:last-of-type {
     margin-left: 63px;
   }

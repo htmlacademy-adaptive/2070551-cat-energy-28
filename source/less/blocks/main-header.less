@@ -1,27 +1,119 @@
-.main-header {
+.main-header__container {
+  position: relative;
+  padding: 0 20px;
+
+  @media (min-width: @tablet-width) {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 30px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding: 0 110px;
+  }
+}
+
+.main-header__icons-wrapper {
   display: flex;
-  justify-content: space-between;
   align-items: center;
 }
 
-.main-header__logo {
-  text-decoration: none;
+.main-header__logo-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 11px 0 18px;
 }
 
-.main-header__logo-icon {
+.main-header__logo-mobile {
   text-decoration: none;
+
+  @media (min-width: @tablet-width) {
+    display: none;
+  }
+}
+
+.main-header__logo-mobile:not(:first-of-type) {
+  margin-left: 56px;
 }
 
 .main-header__logo-tablet {
   display: none;
+
+  @media (min-width: @tablet-width) {
+    display: block;
+    width: 100%;
+  }
+}
+
+.main-header__toggle {
+  position: relative;
+  z-index: 7;
+  display: inline-block;
+  padding: 0;
+  width: 25px;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+
+  @media (min-width: @tablet-width) {
+    display: none;
+  }
+}
+
+.main-header__toggle span {
+  position: relative;
+  display: inline-block;
+  vertical-align: middle;
+  width: 100%;
+  height: 2px;
+  font-size: 0;
+  color: transparent;
+  background: #111111;
+  transition: 0.3s;
+}
+
+.main-header__toggle span::after,
+.main-header__toggle span::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background: #111111;
+  transform-origin: 50% 50%;
+}
+
+.main-header__toggle span::before {
+  top: -7px;
+}
+
+.main-header__toggle span::after {
+  top: 7px;
+}
+
+.main-header__toggle--closed span {
+  background: transparent;
+}
+
+.main-header__toggle--closed span::after,
+.main-header__toggle--closed span::before {
+  transform: rotate3d(0, 0, 1, 45deg);
+  transition: 0.3s, transform 0.3s 0.3s;
+  top: 0;
+}
+
+.main-header__toggle--closed span::before {
+  transform: rotate3d(0, 0, 1, -45deg);
 }
 
 @media (min-width: @tablet-width) {
   .main-header__logo-tablet {
     display: block;
   }
+}
 
-  .main-header__logo-mobile {
-    display: none;
-  }
+.main-header__toggle--nojs {
+  display: none;
 }

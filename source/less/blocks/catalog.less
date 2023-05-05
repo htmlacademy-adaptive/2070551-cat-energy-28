@@ -1,3 +1,36 @@
+.catalog {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 20px;
+
+  @media (min-width: @tablet-width) {
+    flex-direction: column;
+    padding: 0;
+  }
+
+  @media (min-width: @desktop-width) {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+
 .catalog__content {
   background: @dark-white;
+
+  @media (min-width: @desktop-width) {
+    margin-top: 82px;
+  }
+}
+
+.catalog__content:not(:last-of-type) {
+  margin-bottom: 20px;
+
+  @media (min-width: @tablet-width) {
+    margin-bottom: 30px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-bottom: 0;
+  }
 }

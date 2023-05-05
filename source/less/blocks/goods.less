@@ -1,3 +1,33 @@
+.goods {
+  position: relative;
+
+  @media (min-width: @desktop-width) {
+    display: flex;
+  }
+}
+
+.goods::after {
+  @media (min-width: @desktop-width) {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 1px;
+    background-color: @gray-fourth;
+    top: -15px;
+  }
+}
+
+.goods:last-of-type::before {
+  @media (min-width: @desktop-width) {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 1px;
+    background-color: @gray-fourth;
+    bottom: 17px;
+  }
+}
+
 .goods__title {
   font-family: "Oswald", sans-serif;
   font-style: normal;
@@ -6,23 +36,57 @@
   line-height: 16px;
   text-transform: uppercase;
   color: @black-secondary;
+  margin: 0;
+  margin-bottom: 13px;
+}
+
+.goods__desc {
+  display: flex;
+  justify-content: space-between;
 }
 
 .goods__desc-text {
   line-height: 14px;
+  margin-bottom: 15px;
+
+  @media (min-width: @tablet-width) {
+    margin-right: 50px;
+  }
+}
+
+.goods-wrapper {
+  position: relative;
+
+  @media (min-width: @desktop-width) {
+    min-width: 570px;
+  }
+}
+
+.goods-wrapper::after {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 1px;
+  background-color: #e6e6e6;
+  top: -13px;
+
+  @media (min-width: @desktop-width) {
+    display: none;
+  }
+}
+
+.goods__button {
+  margin-bottom: 32px;
+
+  @media (min-width: @desktop-width) {
+    margin-bottom: 32px;
+  }
 }
 
 @media (min-width: @tablet-width) {
   .goods-wrapper {
     display: flex;
     justify-content: space-between;
-  }
-}
-
-@media (min-width: @desktop-width) {
-  .goods {
-    display: grid;
-    grid-template-columns: auto auto auto auto;
-    grid-template-rows: auto auto auto auto;
+    align-items: center;
   }
 }
