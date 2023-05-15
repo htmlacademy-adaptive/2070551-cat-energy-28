@@ -24,6 +24,16 @@
   }
 }
 
+.product-card__wrapper {
+  display: flex;
+  align-items: center;
+
+  @media (min-width: @tablet-width) {
+    display: block;
+    text-align: center;
+  }
+}
+
 .product-card__title {
   font-family: "Oswald", sans-serif;
   font-style: normal;
@@ -44,16 +54,6 @@
   }
 }
 
-.product-card__wrapper {
-  display: flex;
-  align-items: center;
-
-  @media (min-width: @tablet-width) {
-    display: block;
-    text-align: center;
-  }
-}
-
 .product-card__link {
   text-decoration: none;
   flex-basis: 50%;
@@ -63,7 +63,13 @@
 }
 
 .product-card__image--small {
-  flex-basis: 50%;
+  width: 68px;
+  height: 86px;
+}
+
+.product-card__image--large {
+  width: 84px;
+  height: 100px;
 }
 
 .product-card__info-wrapper {

@@ -6,6 +6,24 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Cat Energy: Главная</title>
   <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" href="favicon.ico">
+  <link rel="apple-touch-icon" sizes="57x57" href="/apple-icon-57x57.png">
+  <link rel="apple-touch-icon" sizes="60x60" href="/apple-icon-60x60.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="/apple-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="/apple-icon-76x76.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="/apple-icon-114x114.png">
+  <link rel="apple-touch-icon" sizes="120x120" href="/apple-icon-120x120.png">
+  <link rel="apple-touch-icon" sizes="144x144" href="/apple-icon-144x144.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="/apple-icon-152x152.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-icon-180x180.png">
+  <link rel="icon" type="image/png" sizes="192x192"  href="/android-icon-192x192.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="96x96" href="/favicon-96x96.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+  <link rel="manifest" href="/manifest.json">
+  <meta name="msapplication-TileColor" content="#ffffff">
+  <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+  <meta name="theme-color" content="#ffffff">
 </head>
 
 <body class="page__body">
@@ -14,14 +32,13 @@
       <div class="main-header__logo-wrapper">
         <div class="main-header__icons-wrapper">
     <a class="main-header__logo-mobile" href="#">
-      <img src="img/index/logo/logo-mobile.svg" alt="Логотип Cat Energy." width="34"
-        height="38">
+      <picture>
+        <source media="(min-width: 1440px)" srcset="img/index/logo/logo-desktop.svg">
+        <source media="(min-width: 768px)" srcset="img/index/logo/logo-tablet.svg">
+      <img src="img/index/logo/logo-mobile.svg" alt="Логотип Cat Energy.">
+      </picture>
     </a>
-    <a class="main-header__logo-tablet" href="#">
-      <img src="img/index/logo/logo-tablet.svg" alt="Логотип Cat Energy." width="174"
-        height="52">
-    </a>
-    <a class="main-header__logo-mobile" href="#">
+    <a class="main-header__logo-mobile main-header__logo-mobile--brand" href="#">
       <img src="img/index/logo/logo-icon.svg" alt="Cat Energy." width="101"
         height="18">
     </a>
@@ -50,8 +67,12 @@
       <div class="main-slide__wrapper">
         <h2 class="main-slide__title">Функциональное<br>питание для котов</h2>
         <h3 class="main-slide__subtitle">Занялся собой? Займись котом!</h3>
-        <img class="main-slide__wrapper main-slide__wrapper--img" src="img/index/index-can-mobile-1.png" alt="Кошачий корм с курицей."
-          width="280" height="270">
+        <picture>
+          <source media="(min-width: 1200px)" srcset="img/index/index-can-desktop.png 1x, img/index/index-can-desktop-retina.png 2x">
+          <source media="(min-width: 768px)" srcset="img/index/index-can-tablet.png 1x, img/index/index-can-tablet-retina.png 2x">
+        <img class="main-slide__wrapper main-slide__wrapper--img" src="img/index/index-can-mobile-280.png" alt="Кошачий корм с курицей."
+          width="280" height="270" srcset="img/index/index-can-mobile-540.png 2x">
+        </picture>
         <button class="main-slide__button button button--primary" type="button">Подобрать программу</button>
       </div>
     </section>
@@ -107,6 +128,7 @@
     </section>
 
     <section class="example">
+      <div class="example__container">
       <div class="example__wrapper">
         <h2 class="example__title">Живой пример</h2>
           <p class="example__text">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim.
@@ -135,13 +157,21 @@
       </div>
         <div class="example__proof-wrapper">
           <div class="example__proof photo">
-            <img src="img/index/example/example-cat-left.png" alt="Кот до приёма Cat Energy." width="280" height="256">
+            <picture>
+              <source media="(min-width: 768px)" srcset="img/index/example/example-cat-left.png 1x, img/index/example/example-cat-left-retina.png 2x">
+            <img class="photo__cat" src="img/index/example/example-cat-left-mob-140.png" alt="Кот до приёма Cat Energy." width="140"
+            height="256" srcset="img/index/example/example-cat-left-mob-280.png">
+          </picture>
           </div>
           <div class="example__proof photo">
-            <img src="img/index/example/example-cat-right.png" alt="Кот после приёма Cat Energy." width="280"
-            height="256">
+            <picture>
+              <source media="(min-width: 768px)" srcset="img/index/example/example-cat-right.png 1x, img/index/example/example-cat-right-retina.png 2x">
+            <img class="photo__cat" src="img/index/example/example-cat-right-mob-140.png" alt="Кот после приёма Cat Energy." width="140"
+            height="256" srcset="img/index/example/example-cat-right-mob-280.png">
+          </picture>
           </div>
         </div>
+      </div>
     </section>
   </main>
 
@@ -168,7 +198,11 @@
     </div>
     <div class="page-footer__contacts">
       <a class="page-footer__logo-icon" href="#">
-        <img src="img/index/logo/logo-footer.svg" alt="Cat Energy." width="101" height="18">
+        <picture>
+          <source media="(min-width: 1440px)" srcset="img/index/logo/logo-footer-desktop.svg">
+          <source media="(min-width: 768px)" srcset="img/index/logo/logo-footer-tablet.svg">
+          <img src="img/index/logo/logo-footer-mob.svg" alt="Cat Energy." width="101" height="18">
+        </picture>
       </a>
       <div class="page-footer__socials social-media">
         <span class="visually-hidden">Наши социальные сети</span>

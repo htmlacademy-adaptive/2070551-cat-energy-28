@@ -5,6 +5,10 @@
   @media (min-width: @tablet-width) {
     padding: 0;
   }
+
+  @media (min-width: @desktop-width) {
+    padding: 0 110px;
+  }
 }
 
 .instruction::after {
@@ -20,6 +24,17 @@
 
   @media (min-width: @desktop-width) {
     display: none;
+  }
+}
+
+.instruction__wrapper {
+  @media (min-width: @tablet-width) {
+    max-width: 709px;
+    margin: 0 auto;
+  }
+
+  @media (min-width: @desktop-width) {
+    max-width: 1220px;
   }
 }
 
@@ -173,11 +188,5 @@
     max-width: 245px;
     font-size: 16px;
     line-height: 24px;
-  }
-}
-
-@media (min-width: @desktop-width) {
-  .example__result:last-of-type {
-    margin-left: 63px;
   }
 }

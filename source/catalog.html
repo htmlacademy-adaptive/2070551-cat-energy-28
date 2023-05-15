@@ -6,6 +6,24 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Cat Energy: Каталог продукции</title>
   <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" href="favicon.ico">
+  <link rel="apple-touch-icon" sizes="57x57" href="/apple-icon-57x57.png">
+  <link rel="apple-touch-icon" sizes="60x60" href="/apple-icon-60x60.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="/apple-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="/apple-icon-76x76.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="/apple-icon-114x114.png">
+  <link rel="apple-touch-icon" sizes="120x120" href="/apple-icon-120x120.png">
+  <link rel="apple-touch-icon" sizes="144x144" href="/apple-icon-144x144.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="/apple-icon-152x152.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-icon-180x180.png">
+  <link rel="icon" type="image/png" sizes="192x192"  href="/android-icon-192x192.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="96x96" href="/favicon-96x96.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+  <link rel="manifest" href="/manifest.json">
+  <meta name="msapplication-TileColor" content="#ffffff">
+  <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+  <meta name="theme-color" content="#ffffff">
 </head>
 
 <body class="page__body">
@@ -13,18 +31,17 @@
     <div class="main-header__container main-header__container--border">
       <div class="main-header__logo-wrapper">
         <div class="main-header__icons-wrapper">
-    <a class="main-header__logo-mobile" href="#">
-      <img src="img/index/logo/logo-mobile.svg" alt="Логотип Cat Energy." width="34"
-        height="38">
-    </a>
-    <a class="main-header__logo-tablet" href="#">
-      <img src="img/index/logo/logo-tablet.svg" alt="Логотип Cat Energy." width="174"
-        height="52">
-    </a>
-    <a class="main-header__logo-mobile" href="#">
-      <img src="img/index/logo/logo-icon.svg" alt="Cat Energy." width="101"
-        height="18">
-    </a>
+          <a class="main-header__logo-mobile" href="#">
+            <picture>
+              <source media="(min-width: 1440px)" srcset="img/index/logo/logo-desktop.svg">
+              <source media="(min-width: 768px)" srcset="img/index/logo/logo-tablet.svg">
+            <img src="img/index/logo/logo-mobile.svg" alt="Логотип Cat Energy.">
+            </picture>
+          </a>
+          <a class="main-header__logo-mobile main-header__logo-mobile--brand" href="#">
+            <img src="img/index/logo/logo-icon.svg" alt="Cat Energy." width="101"
+              height="18">
+          </a>
   </div>
     <button class="main-header__toggle main-header__toggle--nojs" type="button"><span class="visually-hidden">Открыть меню</span></button>
   </div>
@@ -51,8 +68,11 @@
         <div class="main-catalog__products product-card">
           <div class="product-card__wrapper">
           <a class="product-card__link" href="#">
-            <img class="product-card__image product-card__image--small" src="img/catalog/products/cat-energy-pro-500.png"
-            alt="Корм Cat Energy Pro 500 грамм." width="68" height="86">
+            <picture>
+              <source media="(min-width: 768px)" srcset="img/catalog/products/chicken-500.png 1x, img/catalog/products/chicken-500-retina.png 2x">
+            <img class="product-card__image product-card__image--small" src="img/catalog/products/chicken-500-mob.png"
+            alt="Корм cо вкусом курицы 500 грамм." srcset="img/catalog/products/chicken-500-mob-retina.png 2x">
+          </picture>
           </a>
             <div class="product-card__info-wrapper">
           <h3 class="product-card__title">Cat Energy PRO 500 г</h3>
@@ -77,8 +97,11 @@
         <div class="main-catalog__products product-card">
           <div class="product-card__wrapper">
           <a class="product-card__link" href="#">
-            <img class="product-card__image product-card__image--large" src="img/catalog/products/cat-energy-pro-1000.png"
-            alt="Корм Cat Energy Pro 500 грамм." width="84" height="100">
+            <picture>
+              <source media="(min-width: 768px)" srcset="img/catalog/products/chicken-1000.png 1x, img/catalog/products/chicken-1000-retina.png 2x">
+            <img class="product-card__image product-card__image--large" src="img/catalog/products/chicken-1000-mob.png"
+            alt="Корм cо вкусом курицы 1000 грамм." srcset="img/catalog/products/chicken-1000-mob-retina.png">
+          </picture>
           </a>
             <div class="product-card__info-wrapper">
           <h3 class="product-card__title">Cat Energy PRO 1000 г</h3>
@@ -103,8 +126,11 @@
         <div class="main-catalog__products product-card">
           <div class="product-card__wrapper">
           <a class="product-card__link" href="#">
-            <img class="product-card__image product-card__image--small" src="img/catalog/products/cat-energy-pro-500-fish.png"
-            alt="Корм Cat Energy Pro 500 грамм." width="68" height="78">
+            <picture>
+              <source media="(min-width: 768px)" srcset="img/catalog/products/fish-500.png 1x, img/catalog/products/fish-500-retina.png 2x">
+                <img class="product-card__image product-card__image--small" src="img/catalog/products/fish-500-mob.png"
+                  alt="Корм cо вкусом рыбы 500 грамм." srcset="img/catalog/products/fish-500-mob-retina.png">
+            </picture>
           </a>
             <div class="product-card__info-wrapper">
           <h3 class="product-card__title">Cat Energy PRO 500 г</h3>
@@ -129,8 +155,11 @@
         <div class="main-catalog__products product-card">
           <div class="product-card__wrapper">
           <a class="product-card__link" href="#">
-            <img class="product-card__image product-card__image--large" src="img/catalog/products/cat-energy-pro-1000-fish.png"
-            alt="Корм Cat Energy Pro 500 грамм." width="84" height="100">
+            <picture>
+              <source media="(min-width: 768px)" srcset="img/catalog/products/fish-1000.png 1x, img/catalog/products/fish-1000-retina.png 2x">
+                <img class="product-card__image product-card__image--large" src="img/catalog/products/fish-1000-mob.png"
+            alt="Корм cо вкусом рыбы 1000 грамм." srcset="img/catalog/products/fish-1000-mob-retina.png">
+            </picture>
           </a>
             <div class="product-card__info-wrapper">
           <h3 class="product-card__title">Cat Energy PRO 1000 г</h3>
@@ -155,8 +184,11 @@
         <div class="main-catalog__products product-card">
           <div class="product-card__wrapper">
           <a class="product-card__link" href="#">
-            <img class="product-card__image product-card__image--small" src="img/catalog/products/cat-energy-pro-500-buckwheat.png"
-            alt="Корм Cat Energy Pro 500 грамм." width="68" height="78">
+            <picture>
+              <source media="(min-width: 768px)" srcset="img/catalog/products/buckwheat-500.png 1x, img/catalog/products/buckwheat-500-retina.png 2x">
+                <img class="product-card__image product-card__image--small" src="img/catalog/products/buckwheat-500-mob.png"
+            alt="Корм cо вкусом гречки 500 грамм." srcset="img/catalog/products/buckwheat-500-mob-retina.png">
+            </picture>
           </a>
             <div class="product-card__info-wrapper">
           <h3 class="product-card__title">Cat Energy Slim 500 г</h3>
@@ -181,8 +213,11 @@
         <div class="main-catalog__products product-card">
           <div class="product-card__wrapper">
           <a class="product-card__link" href="#">
-            <img class="product-card__image product-card__image--large" src="img/catalog/products/cat-energy-pro-1000-buckwheat.png"
-            alt="Корм Cat Energy Pro 500 грамм." width="84" height="100">
+            <picture>
+              <source media="(min-width: 768px)" srcset="img/catalog/products/buckwheat-1000.png 1x, img/catalog/products/buckwheat-1000-retina.png 2x">
+            <img class="product-card__image product-card__image--large" src="img/catalog/products/buckwheat-1000-mob.png"
+            alt="Корм cо вкусом гречки 1000 грамм." srcset="img/catalog/products/buckwheat-1000-mob-retina.png">
+          </picture>
           </a>
             <div class="product-card__info-wrapper">
           <h3 class="product-card__title">Cat Energy Slim 500 г</h3>
@@ -207,8 +242,11 @@
         <div class="main-catalog__products product-card">
           <div class="product-card__wrapper">
           <a class="product-card__link" href="#">
-            <img class="product-card__image product-card__image--small" src="img/catalog/products/cat-energy-pro-500-rice.png"
-            alt="Корм Cat Energy Pro 500 грамм." width="72" height="84">
+            <picture>
+              <source media="(min-width: 768px)" srcset="img/catalog/products/rice-500.png 1x, img/catalog/products/rice-500-retina.png 2x">
+            <img class="product-card__image product-card__image--small" src="img/catalog/products/rice-500-mob.png"
+            alt="Корм cо вкусом риса 500 грамм." srcset="img/catalog/products/rice-500-mob-retina.png">
+          </picture>
           </a>
             <div class="product-card__info-wrapper">
           <h3 class="product-card__title">Cat Energy Slim 500 г</h3>
@@ -315,7 +353,11 @@
     </div>
     <div class="page-footer__contacts">
       <a class="page-footer__logo-icon" href="#">
-        <img src="img/index/logo/logo-footer.svg" alt="Cat Energy." width="101" height="18">
+        <picture>
+          <source media="(min-width: 1440px)" srcset="img/index/logo/logo-footer-desktop.svg">
+          <source media="(min-width: 768px)" srcset="img/index/logo/logo-footer-tablet.svg">
+          <img src="img/index/logo/logo-footer-mob.svg" alt="Cat Energy." width="101" height="18">
+        </picture>
       </a>
       <div class="page-footer__socials social-media">
         <span class="visually-hidden">Наши социальные сети</span>
