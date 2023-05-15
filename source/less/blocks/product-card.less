@@ -24,6 +24,16 @@
   }
 }
 
+.product-card__wrapper {
+  display: flex;
+  align-items: center;
+
+  @media (min-width: @tablet-width) {
+    display: block;
+    text-align: center;
+  }
+}
+
 .product-card__title {
   font-family: "Oswald", sans-serif;
   font-style: normal;
@@ -40,16 +50,6 @@
     font-size: 20px;
     line-height: 24px;
     max-width: 150px;
-    text-align: center;
-  }
-}
-
-.product-card__wrapper {
-  display: flex;
-  align-items: center;
-
-  @media (min-width: @tablet-width) {
-    display: block;
     text-align: center;
   }
 }

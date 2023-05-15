@@ -27,6 +27,17 @@
   }
 }
 
+.instruction__wrapper {
+  @media (min-width: @tablet-width) {
+    max-width: 709px;
+    margin: 0 auto;
+  }
+
+  @media (min-width: @desktop-width) {
+    max-width: 1220px;
+  }
+}
+
 .instruction__title {
   font-family: "Oswald", sans-serif;
   font-style: normal;
@@ -177,11 +188,5 @@
     max-width: 245px;
     font-size: 16px;
     line-height: 24px;
-  }
-}
-
-@media (min-width: @desktop-width) {
-  .example__result:last-of-type {
-    margin-left: 63px;
   }
 }

@@ -1,3 +1,7 @@
+.main-header {
+  position: relative;
+}
+
 .main-header__container {
   position: relative;
   padding: 0 20px;
@@ -73,6 +77,10 @@
   }
 }
 
+.main-header__toggle .visually-hidden {
+  overflow: visible;
+}
+
 .main-header__toggle span {
   position: relative;
   display: inline-block;
@@ -117,12 +125,6 @@
 
 .main-header__toggle--closed span::before {
   transform: rotate3d(0, 0, 1, -45deg);
-}
-
-@media (min-width: @tablet-width) {
-  .main-header__logo-tablet {
-    display: block;
-  }
 }
 
 .main-header__toggle--nojs {
