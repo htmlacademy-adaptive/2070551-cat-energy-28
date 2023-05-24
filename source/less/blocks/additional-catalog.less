@@ -1,3 +1,14 @@
+.additional-catalog {
+  @media (min-width: @tablet-width) {
+    margin: 0 auto;
+    max-width: 709px;
+  }
+
+  @media (min-width: @desktop-width) {
+    max-width: 1220px;
+  }
+}
+
 .additional-catalog__title {
   position: relative;
   margin: 0;
@@ -19,7 +30,6 @@
   content: "";
   position: absolute;
   top: 50%;
-  width: 100vw;
   height: 2px;
   margin-top: 2px;
   background: @green;

@@ -1,3 +1,14 @@
+.main-catalog {
+  @media (min-width: @tablet-width) {
+    margin: 0 auto;
+    max-width: 709px;
+  }
+
+  @media (min-width: @desktop-width) {
+    max-width: 1220px;
+  }
+}
+
 .main-catalog__products {
   @media (min-width: @desktop-width) {
     width: 205px;
@@ -12,7 +23,8 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: auto auto auto auto;
-    gap: 60px;
+    column-gap: 60px;
+    row-gap: 140px;
   }
 
   @media (min-width: @desktop-width) {
