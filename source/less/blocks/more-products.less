@@ -2,7 +2,14 @@
   position: relative;
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
   align-items: center;
+  box-sizing: border-box;
+
+  @media (min-width: @desktop-width) {
+    border: 2px solid @dark-white;
+    width: 245px;
+  }
 }
 
 .more-products__title {
@@ -16,16 +23,34 @@
   line-height: 20px;
   text-transform: uppercase;
   color: @black-third;
+
+  @media (min-width: @tablet-width) {
+    margin-top: 160px;
+    text-align: center;
+    max-width: 140px;
+  }
 }
 
 .more-products__subtitle {
   line-height: 16px;
   margin: 8px 0 21px;
   padding: 0;
+
+  @media (min-width: @desktop-width) {
+    margin-top: 23px;
+    margin-bottom: 87px;
+    max-width: 165px;
+    text-align: center;
+  }
 }
 
 .more-products__button {
   margin-bottom: 25px;
+
+  @media (min-width: @desktop-width) {
+    margin: 0 38px 20px;
+    width: 170px;
+  }
 }
 
 .more-products--icon::before {
@@ -35,18 +60,11 @@
   height: 30px;
   top: 25px;
   background-image: url("/img/catalog/products/plus-icon.svg");
-}
-
-.more-products--icon::after {
-  position: absolute;
-  content: "";
-  width: 110%;
-  height: 1px;
-  background-color: @gray-fourth;
-  bottom: 0;
-  left: -20px;
 
   @media (min-width: @tablet-width) {
-    display: none;
+    width: 60px;
+    height: 60px;
+    top: 52px;
+    background-image: url("/img/catalog/products/plus-icon-tablet.svg");
   }
 }
