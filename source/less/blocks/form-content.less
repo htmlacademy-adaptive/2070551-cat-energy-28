@@ -14,10 +14,17 @@
   border: none;
 }
 
-.form-content__group-container {
+.form-content__group--contacts .form-content__group-container {
+  margin-top: 34px;
+
+  @media (min-width: @tablet-width) {
+    margin-top: 76px;
+  }
+
   @media (min-width: @desktop-width) {
-    display: flex;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: auto auto;
+    column-gap: 78px;
   }
 }
 
@@ -25,27 +32,10 @@
   position: relative;
   display: flex;
   align-items: center;
-  width: 100%;
   margin-bottom: 14px;
 
   @media (min-width: @tablet-width) {
-    margin-bottom: 20px;
-  }
-
-  @media (min-width: @desktop-width) {
-    margin-bottom: 65px;
-  }
-}
-
-.form-content__group-wrapper:last-of-type {
-  margin-bottom: 24px;
-
-  @media (min-width: @tablet-width) {
-    margin-bottom: 65px;
-  }
-
-  @media (min-width: @desktop-width) {
-    margin-left: 5%;
+    margin-bottom: 33px;
   }
 }
 
@@ -58,9 +48,12 @@
 
 .form-content__list {
   list-style-type: none;
-  padding: 0;
   margin: 0;
-  margin-top: 7px;
+  padding: 22px 0;
+
+  @media (min-width: @tablet-width) {
+    padding: 25px 28px;
+  }
 
   @media (min-width: @desktop-width) {
     display: flex;
@@ -86,7 +79,6 @@
   content: "";
   position: absolute;
   top: 50%;
-  // width: 100vw;
   height: 2px;
   margin-top: 2px;
   background: @green;
@@ -108,6 +100,7 @@
 }
 
 .form-content__group-label {
+  position: relative;
   font-family: "Oswald", sans-serif;
   font-style: normal;
   font-weight: 400;
@@ -115,14 +108,37 @@
   line-height: 18px;
   text-transform: uppercase;
   color: @light-black;
-  min-width: max-content;
   display: flex;
   align-items: center;
+  cursor: pointer;
+  padding-top: 4px;
 
   @media (min-width: @tablet-width) {
     font-size: 20px;
     line-height: 30px;
+    padding-top: 5px;
   }
+}
+
+.form-content__group-label--radio {
+  padding-left: 46px;
+
+  @media (min-width: @tablet-width) {
+    padding-left: 66px;
+  }
+}
+
+.form-content__group-label--contacts {
+  margin-right: 10px;
+
+  @media (min-width: @tablet-width) {
+    margin-right: 20px;
+  }
+}
+
+.form-content__item {
+  margin-bottom: 23px;
+  text-align: center;
 }
 
 .form-content__group-input {
@@ -134,7 +150,8 @@
   text-transform: uppercase;
   color: @light-black;
   margin-left: 13px;
-  width: 100%;
+  padding: 14px 20px;
+  flex-grow: 1;
   height: 45px;
   box-sizing: border-box;
   border: 1px solid @gray-secondary;
@@ -142,6 +159,7 @@
   @media (min-width: @tablet-width) {
     font-size: 20px;
     line-height: 30px;
+    padding: 11px 20px;
   }
 }
 
@@ -179,7 +197,7 @@
   margin-top: 39px;
 
   @media (min-width: @tablet-width) {
-    margin-top: 66px;
+    margin-top: 65px;
   }
 
   @media (min-width: @desktop-width) {
@@ -192,7 +210,7 @@
 
   @media (min-width: @tablet-width) {
     border: 1px solid @gray-secondary;
-    padding: 25px 28px;
+    margin-top: 65px;
   }
 
   @media (min-width: @desktop-width) {
@@ -243,14 +261,6 @@
   }
 }
 
-.form-content__group--contacts .form-content__group-container {
-  margin-top: 34px;
-
-  @media (min-width: @tablet-width) {
-    margin-top: 76px;
-  }
-}
-
 .form-content__submit {
   display: flex;
   flex-direction: column;
@@ -274,5 +284,45 @@
   @media (min-width: @tablet-width) {
     top: 15px;
     right: 20px;
+  }
+}
+
+.form-content__group-mark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 30px;
+  height: 30px;
+  border: 1px solid @gray-third;
+  border-radius: 50%;
+  box-sizing: border-box;
+
+  @media (min-width: @tablet-width) {
+    width: 40px;
+    height: 40px;
+  }
+}
+
+.form-content__group-input[type="radio"]:checked + .form-content__group-mark {
+  background-image: url("/img/form/radiobutton-active-mob.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+
+  @media (min-width: @tablet-width) {
+    background-image: url("/img/form/radiobutton-active.svg");
+  }
+}
+
+.form-content__group-mark-additional {
+  border-radius: 3px;
+}
+
+.form-content__group-input[type="checkbox"]:checked + .form-content__group-mark-additional {
+  background-image: url("/img/form/checkbox-active-mob.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+
+  @media (min-width: @tablet-width) {
+    background-image: url("/img/form/checkbox-active.svg");
   }
 }
